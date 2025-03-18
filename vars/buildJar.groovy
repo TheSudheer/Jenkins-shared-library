@@ -1,7 +1,6 @@
 #!/usr/bin/env groovy // shebang line
 
 def call() {
-    echo 'Building the app'
-    sh "./gradlew clean build"
+    echo "building the application for branch $BRANCH_NAME"
+    sh "./gradlew build"
 }
-
