@@ -2,5 +2,5 @@
 
 def call() {
     echo "building the application...."
-    sh "./gradlew build"
+    sh "./gradlew --no-daemon --info build"
 }
