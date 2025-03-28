@@ -2,5 +2,5 @@
 
 def call() {
     echo "building the application...."
-    sh "./gradlew --no-daemon --info --stacktrace clean build"
+    sh " timeout --kill-after=180 180 ./gradlew clean build"
 }
