@@ -3,6 +3,9 @@
 def call() {
     echo "Checking Java and Gradle versions before building the application..."
     sh '''
+        # Add the SDKMAN Gradle path to the PATH.
+        export PATH=$HOME/.sdkman/candidates/gradle/current/bin:$PATH
+
         echo "---- Java Version ----"
         java -version
 
