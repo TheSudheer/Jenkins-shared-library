@@ -9,10 +9,7 @@ def call() {
         echo "---- Java Version ----"
         java -version
 
-        echo "---- Gradle Version ----"
-        gradle --version
-
-        echo "Building the application with a timeout of 180 seconds..."
-        timeout --kill-after=180 180 gradle clean build
+        echo "Building the application with a timeout of 300 seconds..."
+        timeout --kill-after=300 300 gradle clean build
     '''
 }
